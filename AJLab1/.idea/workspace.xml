@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="285772d4-8447-46e0-83c5-e3755eee2731" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1Y1bABDXwlEmDAG6Jbw0fZuafyq" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bd.edu.seu.ajlab1.Main" />
+      <module name="AJLab1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bd.edu.seu.ajlab1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="285772d4-8447-46e0-83c5-e3755eee2731" name="Default Changelist" comment="" />
+      <created>1582112901686</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1582112901686</updated>
+      <workItem from="1582112903575" duration="4421000" />
+      <workItem from="1582170231888" duration="8043000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="446" y="56" key="#com.intellij.ide.util.MemberChooser" timestamp="1582171235441">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="446" y="56" key="#com.intellij.ide.util.MemberChooser/0.0.1280.689@0.0.1280.689" timestamp="1582171235441" />
+    <state width="1237" height="441" key="GridCell.Tab.0.bottom" timestamp="1582183453119">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1237" height="441" key="GridCell.Tab.0.bottom/0.0.1280.689@0.0.1280.689" timestamp="1582183453119" />
+    <state width="1237" height="441" key="GridCell.Tab.0.center" timestamp="1582183453119">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1237" height="441" key="GridCell.Tab.0.center/0.0.1280.689@0.0.1280.689" timestamp="1582183453119" />
+    <state width="1237" height="441" key="GridCell.Tab.0.left" timestamp="1582183453119">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1237" height="441" key="GridCell.Tab.0.left/0.0.1280.689@0.0.1280.689" timestamp="1582183453119" />
+    <state width="1237" height="441" key="GridCell.Tab.0.right" timestamp="1582183453119">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1237" height="441" key="GridCell.Tab.0.right/0.0.1280.689@0.0.1280.689" timestamp="1582183453119" />
+    <state x="337" y="171" key="com.intellij.ide.util.TipDialog" timestamp="1582170233739">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="337" y="171" key="com.intellij.ide.util.TipDialog/0.0.1280.689@0.0.1280.689" timestamp="1582170233739" />
+  </component>
+</project>
