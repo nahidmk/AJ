@@ -24,8 +24,8 @@ public class ProductService {
     public ProductService() {
         // we can switch out the implementation just by changing one line here
         // that's the beauty of using DAO pattern here
-        //productDao = new ProductDaoCsvImplementation();
-       productDao = new ProductDaoDBImplementation();
+        productDao = new ProductDaoCsvImplementation();
+       //productDao = new ProductDaoDBImplementation();
     }
 
     // a sample implementation
@@ -75,18 +75,19 @@ public class ProductService {
 
     public void createProduct()
     {
-        Product product = new Product(80,"ball","12-pice",23.5,10,7,10,false);
+        Product product = new Product(70,"book","12-pice",23.5,10,7,10,false);
         productDao.createProduct(product);
     }
 
     public  void  deleteProduct()
     {
-        productDao.deleteProduct(80);
+        productDao.deleteProduct(70);
     }
 
     public void updateProduct()
     {
-        Product product = new Product(2,"ball","12-pice",23.5,10,7,10,false);
+        Product product = new Product(80,"bahubali","13-pice",23.5,10,7,10,true);
         productDao.updateProduct(product.getProductID(),product);
+
     }
 }

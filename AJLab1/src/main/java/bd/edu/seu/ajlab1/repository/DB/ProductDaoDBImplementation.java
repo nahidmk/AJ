@@ -100,6 +100,7 @@ public class ProductDaoDBImplementation implements ProductDao {
         }
     }
 
+    //Delete a product
     @Override
     public void deleteProduct(int productId) {
         String sql = "DELETE FROM "+tabel_name+" WHERE productId = "+productId;
@@ -119,6 +120,7 @@ public class ProductDaoDBImplementation implements ProductDao {
 
     }
 
+    //Update product
     @Override
     public void updateProduct(int productId, Product product) {
         String sql = "UPDATE "+tabel_name+" SET productName = '"+product.getProductName()+"' where productId = "+productId;

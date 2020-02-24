@@ -6,6 +6,9 @@
 package bd.edu.seu.ajlab1.repository;
 
 import bd.edu.seu.ajlab1.model.Product;
+
+import java.io.BufferedWriter;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -66,16 +69,102 @@ public class ProductDaoCsvImplementation implements ProductDao {
 
     @Override
     public void createProduct(Product product) {
+        boolean isPresent = false;
 
+        List<String> list = null;
+        try {
+            list = Files.readAllLines(Paths.get("products.csv"));
+
+            for (String i : list) {
+                if (getProductID(i) == product.getProductID()) {
+                    isPresent = true;
+                }
+            }
+
+            if (!isPresent) {
+                String discontinued = "0";
+                if (product.isDiscontinued()) {
+                    discontinued = "1";
+                }
+                String Product = "\n" + product.getProductID() + "," + product.getProductName() + ",10,8,"
+                        + product.getQuantityPerUnit() + "," + product.getUnitPrice() + "," + product.getUnitsInStock()
+                        + "," + product.getUnitsOnOrder() + "," + product.getReorderLevel() + "," + discontinued;
+
+                BufferedWriter bw = new BufferedWriter(new FileWriter("products.csv", true));
+                bw.write(Product);
+                bw.close();
+                System.out.println("Insert done....!");
+            } else {
+                System.out.println("sorry...Change the product ID");
+            }
+        }catch (Exception e)
+        {
+            e.printStackTrace();
+        }
     }
 
     @Override
     public void deleteProduct(int productId) {
-
+        StringBuilder stringBuilder = new StringBuilder();
+        try {
+            List<String> list = null;
+            list = Files.readAllLines(Paths.get("products.csv"));
+            for(String s : list)
+            {
+                if(getProductID(s)!=productId)
+                {
+                    stringBuilder.append(s+"\n");
+                }
+            }
+             String Product = stringBuilder.toString();
+             BufferedWriter bw = new BufferedWriter(new FileWriter("products.csv"));
+             bw.write(Product);
+             bw.close();
+            System.out.println("Delete done...!");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     @Override
     public void updateProduct(int productId, Product product) {
 
+        StringBuilder stringBuilder = new StringBuilder();
+        try {
+            List<String> list = null;
+            list = Files.readAllLines(Paths.get("products.csv"));
+            for(String s : list)
+            {
+
+                if(getProductID(s)==productId)
+                {
+                    String discontinued = "0";
+                    if(product.isDiscontinued())
+                    {
+                        discontinued = "1";
+                    }
+                    s = product.getProductID()+","+product.getProductName()+",10,8,"
+                            +product.getQuantityPerUnit()+","+product.getUnitPrice()+","+product.getUnitsInStock()
+                            +","+product.getUnitsOnOrder()+","+product.getReorderLevel()+","+discontinued;
+                }
+                stringBuilder.append(s+"\n");
+            }
+            String Product = stringBuilder.toString();
+            BufferedWriter bw = new BufferedWriter(new FileWriter("products.csv"));
+            bw.write(Product);
+            bw.close();
+            System.out.println("Update Done....!");
+        }catch (Exception e)
+        {
+            e.printStackTrace();
+        }
     }
+
+
+    public int getProductID(String s)
+    {
+        String arr[] = s.split("\\,");
+        return Integer.parseInt(arr[0]);
+    }
+
 }

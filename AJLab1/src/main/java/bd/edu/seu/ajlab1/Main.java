@@ -25,16 +25,18 @@ public class Main {
 //        productService.getProductListSortedByUnitProductName().forEach(System.out::println);
 //        System.out.println("\n\n the price : "+productService.getTotalPriceOfProductsInStock());
 
-        System.out.println("\n\n create a new product : ");
-        productService.createProduct();
+//        System.out.println("\n\n create a new product : ");
+//        productService.createProduct();
 
-        System.out.println("\n\n Delete a product : ");
-        productService.deleteProduct();
-
+//        System.out.println("\n\n Delete a product : ");
+//        productService.deleteProduct();
+//
         System.out.println("\n\n Update a product : ");
         productService.updateProduct();
 
     }
+
+
     
     public static void main(String args[]) {
         new Main();
