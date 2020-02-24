@@ -9,9 +9,9 @@ public class DBConnection {
     private static final String PASSWORD = "manik";
     private static final String USERNAME = "root";
     private static final String URL = "jdbc:mysql://"+HOSTNAME+"/"+DBNAME;
-    private Connection connection = null;
-
-    public DBConnection() {
+    private static Connection connection = null;
+    private static DBConnection db = new DBConnection();
+    private DBConnection() {
         try {
             connection = DriverManager.getConnection(URL,USERNAME,PASSWORD);
             System.out.println("DAO : Data base is connected");
@@ -19,7 +19,7 @@ public class DBConnection {
             e.printStackTrace();
         }
     }
-    public Connection getConnection()
+    public static Connection getConnection()
     {
         return connection;
     }

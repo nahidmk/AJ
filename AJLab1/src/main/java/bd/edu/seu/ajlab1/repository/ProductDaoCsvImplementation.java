@@ -35,7 +35,8 @@ public class ProductDaoCsvImplementation implements ProductDao {
         }
         return null;
     }
-    
+
+
     private Product getProduct(String line) {
         if (line.startsWith("p"))
             return null;
@@ -60,5 +61,21 @@ public class ProductDaoCsvImplementation implements ProductDao {
                 reorderLevel, 
                 discontinued);
         return product;
+    }
+
+
+    @Override
+    public void createProduct(Product product) {
+
+    }
+
+    @Override
+    public void deleteProduct(int productId) {
+
+    }
+
+    @Override
+    public void updateProduct(int productId, Product product) {
+
     }
 }

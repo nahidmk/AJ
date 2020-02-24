@@ -17,13 +17,22 @@ public class Main {
     public Main() {
         productService = new ProductService();
         
-        System.out.println("Discontinued products: " + productService.findAllDiscontinuedProducts().size());
-        System.out.println("Product that need to be reorder : "+productService.findProductsThatNeedToBeReordered().size());
-        System.out.println("Product that sorted by there unit price : ");
-        productService.getProductListSortedByUnitPrice().forEach(System.out::println);
-        System.out.println("\n\n product that sorted by there name: ");
-        productService.getProductListSortedByUnitProductName().forEach(System.out::println);
-        System.out.println("\n\n the price : "+productService.getTotalPriceOfProductsInStock());
+//        System.out.println("Discontinued products: " + productService.findAllDiscontinuedProducts().size());
+//        System.out.println("Product that need to be reorder : "+productService.findProductsThatNeedToBeReordered().size());
+//        System.out.println("Product that sorted by there unit price : ");
+//        productService.getProductListSortedByUnitPrice().forEach(System.out::println);
+//        System.out.println("\n\n product that sorted by there name: ");
+//        productService.getProductListSortedByUnitProductName().forEach(System.out::println);
+//        System.out.println("\n\n the price : "+productService.getTotalPriceOfProductsInStock());
+
+        System.out.println("\n\n create a new product : ");
+        productService.createProduct();
+
+        System.out.println("\n\n Delete a product : ");
+        productService.deleteProduct();
+
+        System.out.println("\n\n Update a product : ");
+        productService.updateProduct();
 
     }
     

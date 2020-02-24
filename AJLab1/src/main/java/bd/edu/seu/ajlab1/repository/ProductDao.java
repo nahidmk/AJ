@@ -14,6 +14,9 @@ import java.util.List;
  */
 public interface ProductDao {
     public List<Product> readAll();
+    public void createProduct(Product product);
+    public void deleteProduct(int productId);
+    public void updateProduct(int productId, Product product);
 }
 
 // TODO advanced

@@ -72,4 +72,21 @@ public class ProductService {
                 .stream()
                 .mapToDouble(p-> p.getUnitsInStock() * p.getUnitPrice()).sum();
     }
+
+    public void createProduct()
+    {
+        Product product = new Product(80,"ball","12-pice",23.5,10,7,10,false);
+        productDao.createProduct(product);
+    }
+
+    public  void  deleteProduct()
+    {
+        productDao.deleteProduct(80);
+    }
+
+    public void updateProduct()
+    {
+        Product product = new Product(2,"ball","12-pice",23.5,10,7,10,false);
+        productDao.updateProduct(product.getProductID(),product);
+    }
 }
