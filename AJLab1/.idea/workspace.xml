@@ -2,15 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="285772d4-8447-46e0-83c5-e3755eee2731" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/products.csv" beforeDir="false" afterPath="$PROJECT_DIR$/products.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/bd/edu/seu/ajlab1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bd/edu/seu/ajlab1/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bd/edu/seu/ajlab1/repository/DB/ProductDaoDBImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bd/edu/seu/ajlab1/repository/DB/ProductDaoDBImplementation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/bd/edu/seu/ajlab1/repository/ProductDaoCsvImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bd/edu/seu/ajlab1/repository/ProductDaoCsvImplementation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/bd/edu/seu/ajlab1/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bd/edu/seu/ajlab1/service/ProductService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/bd/edu/seu/ajlab1/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bd/edu/seu/ajlab1/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bd/edu/seu/ajlab1/repository/DB/ProductDaoDBImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bd/edu/seu/ajlab1/repository/DB/ProductDaoDBImplementation.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/bd/edu/seu/ajlab1/repository/ProductDaoCsvImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bd/edu/seu/ajlab1/repository/ProductDaoCsvImplementation.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/bd/edu/seu/ajlab1/service/ProductService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bd/edu/seu/ajlab1/service/ProductService.class" afterDir="false" />
     </list>
@@ -91,6 +88,7 @@
       <workItem from="1582473960509" duration="5087000" />
       <workItem from="1582512664995" duration="2149000" />
       <workItem from="1582537956115" duration="15648000" />
+      <workItem from="1582605822642" duration="840000" />
     </task>
     <servers />
   </component>
@@ -102,26 +100,26 @@
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="446" y="56" key="#com.intellij.ide.util.MemberChooser/0.0.1280.689@0.0.1280.689" timestamp="1582514300639" />
-    <state width="1237" height="441" key="GridCell.Tab.0.bottom" timestamp="1582574340497">
+    <state width="1237" height="441" key="GridCell.Tab.0.bottom" timestamp="1582606871783">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state width="1237" height="441" key="GridCell.Tab.0.bottom/0.0.1280.689@0.0.1280.689" timestamp="1582574340497" />
-    <state width="1237" height="441" key="GridCell.Tab.0.center" timestamp="1582574340497">
+    <state width="1237" height="441" key="GridCell.Tab.0.bottom/0.0.1280.689@0.0.1280.689" timestamp="1582606871783" />
+    <state width="1237" height="441" key="GridCell.Tab.0.center" timestamp="1582606871783">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state width="1237" height="441" key="GridCell.Tab.0.center/0.0.1280.689@0.0.1280.689" timestamp="1582574340497" />
-    <state width="1237" height="441" key="GridCell.Tab.0.left" timestamp="1582574340497">
+    <state width="1237" height="441" key="GridCell.Tab.0.center/0.0.1280.689@0.0.1280.689" timestamp="1582606871783" />
+    <state width="1237" height="441" key="GridCell.Tab.0.left" timestamp="1582606871783">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state width="1237" height="441" key="GridCell.Tab.0.left/0.0.1280.689@0.0.1280.689" timestamp="1582574340497" />
-    <state width="1237" height="441" key="GridCell.Tab.0.right" timestamp="1582574340497">
+    <state width="1237" height="441" key="GridCell.Tab.0.left/0.0.1280.689@0.0.1280.689" timestamp="1582606871783" />
+    <state width="1237" height="441" key="GridCell.Tab.0.right" timestamp="1582606871783">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state width="1237" height="441" key="GridCell.Tab.0.right/0.0.1280.689@0.0.1280.689" timestamp="1582574340497" />
-    <state x="337" y="171" key="com.intellij.ide.util.TipDialog" timestamp="1582537957861">
+    <state width="1237" height="441" key="GridCell.Tab.0.right/0.0.1280.689@0.0.1280.689" timestamp="1582606871783" />
+    <state x="337" y="171" key="com.intellij.ide.util.TipDialog" timestamp="1582605824489">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state x="337" y="171" key="com.intellij.ide.util.TipDialog/0.0.1280.689@0.0.1280.689" timestamp="1582537957861" />
+    <state x="337" y="171" key="com.intellij.ide.util.TipDialog/0.0.1280.689@0.0.1280.689" timestamp="1582605824489" />
     <state x="371" y="112" key="extract.method.dialog" timestamp="1582554641657">
       <screen x="0" y="0" width="1280" height="689" />
     </state>

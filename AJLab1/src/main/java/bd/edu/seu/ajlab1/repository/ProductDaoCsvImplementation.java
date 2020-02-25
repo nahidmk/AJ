@@ -13,6 +13,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.List;
+import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.stream.Collectors;
@@ -69,26 +70,24 @@ public class ProductDaoCsvImplementation implements ProductDao {
 
     @Override
     public void createProduct(Product product) {
-        boolean isPresent = false;
-
-        List<String> list = null;
+        AtomicBoolean isPresent = new AtomicBoolean(false);
         try {
-            list = Files.readAllLines(Paths.get("products.csv"));
-
-            for (String i : list) {
+            Files.readAllLines(Paths.get("products.csv"))
+            .stream()
+            .forEach(i->
+            {
                 if (getProductID(i) == product.getProductID()) {
-                    isPresent = true;
+                    isPresent.set(true);
                 }
-            }
-
-            if (!isPresent) {
+            });
+            if (!isPresent.get()) {
                 String discontinued = "0";
                 if (product.isDiscontinued()) {
                     discontinued = "1";
                 }
-                String Product = "\n" + product.getProductID() + "," + product.getProductName() + ",10,8,"
+                String Product =  product.getProductID() + "," + product.getProductName() + ",10,8,"
                         + product.getQuantityPerUnit() + "," + product.getUnitPrice() + "," + product.getUnitsInStock()
-                        + "," + product.getUnitsOnOrder() + "," + product.getReorderLevel() + "," + discontinued;
+                        + "," + product.getUnitsOnOrder() + "," + product.getReorderLevel() + "," + discontinued+"\n";
 
                 BufferedWriter bw = new BufferedWriter(new FileWriter("products.csv", true));
                 bw.write(Product);
@@ -107,15 +106,14 @@ public class ProductDaoCsvImplementation implements ProductDao {
     public void deleteProduct(int productId) {
         StringBuilder stringBuilder = new StringBuilder();
         try {
-            List<String> list = null;
-            list = Files.readAllLines(Paths.get("products.csv"));
-            for(String s : list)
-            {
-                if(getProductID(s)!=productId)
+           Files.readAllLines(Paths.get("products.csv"))
+           .stream()
+           .forEach(s->{
+                 if(getProductID(s)!=productId)
                 {
                     stringBuilder.append(s+"\n");
                 }
-            }
+           });
              String Product = stringBuilder.toString();
              BufferedWriter bw = new BufferedWriter(new FileWriter("products.csv"));
              bw.write(Product);
@@ -131,24 +129,23 @@ public class ProductDaoCsvImplementation implements ProductDao {
 
         StringBuilder stringBuilder = new StringBuilder();
         try {
-            List<String> list = null;
-            list = Files.readAllLines(Paths.get("products.csv"));
-            for(String s : list)
-            {
-
-                if(getProductID(s)==productId)
-                {
-                    String discontinued = "0";
-                    if(product.isDiscontinued())
+            Files.readAllLines(Paths.get("products.csv"))
+            .stream()
+                    .forEach(s->
                     {
-                        discontinued = "1";
-                    }
-                    s = product.getProductID()+","+product.getProductName()+",10,8,"
-                            +product.getQuantityPerUnit()+","+product.getUnitPrice()+","+product.getUnitsInStock()
-                            +","+product.getUnitsOnOrder()+","+product.getReorderLevel()+","+discontinued;
-                }
-                stringBuilder.append(s+"\n");
-            }
+                        if(getProductID(s)==productId)
+                        {
+                            String discontinued = "0";
+                            if(product.isDiscontinued())
+                            {
+                                discontinued = "1";
+                            }
+                            s = product.getProductID()+","+product.getProductName()+",10,8,"
+                                    +product.getQuantityPerUnit()+","+product.getUnitPrice()+","+product.getUnitsInStock()
+                                    +","+product.getUnitsOnOrder()+","+product.getReorderLevel()+","+discontinued;
+                        }
+                        stringBuilder.append(s+"\n");
+                    });
             String Product = stringBuilder.toString();
             BufferedWriter bw = new BufferedWriter(new FileWriter("products.csv"));
             bw.write(Product);

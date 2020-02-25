@@ -75,18 +75,18 @@ public class ProductService {
 
     public void createProduct()
     {
-        Product product = new Product(70,"book","12-pice",23.5,10,7,10,false);
+        Product product = new Product(3,"apple","25-pice",30,20,27,10,true);
         productDao.createProduct(product);
     }
 
     public  void  deleteProduct()
     {
-        productDao.deleteProduct(70);
+        productDao.deleteProduct(50);
     }
 
     public void updateProduct()
     {
-        Product product = new Product(80,"bahubali","13-pice",23.5,10,7,10,true);
+        Product product = new Product(79,"phone","13-pice",23.5,10,10,15,true);
         productDao.updateProduct(product.getProductID(),product);
 
     }

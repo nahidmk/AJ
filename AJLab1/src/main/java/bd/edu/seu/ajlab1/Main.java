@@ -30,7 +30,7 @@ public class Main {
 
 //        System.out.println("\n\n Delete a product : ");
 //        productService.deleteProduct();
-//
+
         System.out.println("\n\n Update a product : ");
         productService.updateProduct();
 
