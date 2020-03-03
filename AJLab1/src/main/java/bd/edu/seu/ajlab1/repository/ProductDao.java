@@ -15,6 +15,12 @@ import java.util.List;
 public interface ProductDao {
     public List<Product> readAll();
     public void createProduct(Product product);
+    default public Product readProduct(int productId) {
+        for (Product product : readAll())
+            if (product.getProductID() == productId)
+                return product;
+        return null;
+    }
     public void deleteProduct(int productId);
     public void updateProduct(int productId, Product product);
 }

@@ -13,11 +13,15 @@ import java.util.stream.Collectors;
 
 public class ProductDaoDBImplementation implements ProductDao {
     DBConnection db ;
-    private Connection connection = db.getConnection();
+    private Connection connection  = null;
     private ResultSet resultSet;
     private Statement statement;
     private String tabel_name = "tbl_name";
 
+    public ProductDaoDBImplementation() {
+
+         connection = db.getConnection();
+    }
 
     @Override
     public List<Product> readAll() {
@@ -79,7 +83,7 @@ public class ProductDaoDBImplementation implements ProductDao {
     //Insert a Product in database
     @Override
     public void createProduct(Product product) {
-
+        System.out.println("hello");
         String sql = "INSERT INTO "+tabel_name+" VALUES ("+product.getProductID()+","+
                 " '"+product.getProductName()+"', 10, 73, '"+product.getQuantityPerUnit()+"',"+product.getUnitPrice()+","
                 +product.getUnitsInStock()+","+product.getUnitsOnOrder()+","+product.getReorderLevel()+","+
@@ -138,4 +142,42 @@ public class ProductDaoDBImplementation implements ProductDao {
             e.printStackTrace();
         }
     }
+
+    public Product readProduct(int productId) {
+        try {
+
+            statement = connection.createStatement();
+
+            String query = "SELECT * FROM tbl_name WHERE productId = " + productId;
+
+            ResultSet resultSet = statement.executeQuery(query);
+
+            while (resultSet.next()) {
+                int id = resultSet.getInt("productId");
+                String productName = resultSet.getString("productName");
+                String quantityPerUnit = resultSet.getString("quantityPerUnit");
+                double unitPrice = resultSet.getDouble("unitPrice");
+                double unitsInStock = resultSet.getDouble("unitsInStock");
+                double unitsOnOrder = resultSet.getDouble("unitsOnOrder");
+                double reorderLevel = resultSet.getDouble("reorderLevel");
+                boolean discontinued = resultSet.getBoolean("discontinued");
+
+                Product product = new Product(id,
+                        productName,
+                        quantityPerUnit,
+                        unitPrice,
+                        unitsInStock,
+                        unitsOnOrder,
+                        reorderLevel,
+                        discontinued);
+
+                return product;
+            }
+        } catch (SQLException ex) {
+            ex.printStackTrace();
+        }
+
+        return null;
+    }
+
 }
