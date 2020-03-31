@@ -5,6 +5,9 @@ import lombok.Data;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
+import java.util.List;
 
 @Data
 @AllArgsConstructor
@@ -18,5 +21,9 @@ public class product {
     private String name;
     private double unitprice;
     private double unitStock;
+    private boolean Discontinue;
+    @OneToMany
+    private List<Supplier> supplierList;
+
 
 }

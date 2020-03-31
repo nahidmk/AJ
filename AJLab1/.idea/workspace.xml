@@ -2,52 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="285772d4-8447-46e0-83c5-e3755eee2731" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_6_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_6_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/bd/edu/seu/ajlab1/repository/DB/ProductDaoDBImplementationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AJLab2/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AJLab2/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AJLab2/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AJLab2/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AJLab2/.idea/libraries/Maven__com_google_protobuf_protobuf_java_3_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AJLab2/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_19.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AJLab2/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AJLab2/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AJLab2/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AJLab2/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AJLab2/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AJLab2/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AJLab2/.idea/libraries/Maven__org_opentest4j_opentest4j_1_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AJLab2/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AJLab2/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AJLab2/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AJLab2/AJLab2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AJLab2/src/main/java/bd/edu/seu/ajlab2/repository/QuerySingleton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HN/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HN/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HN/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HN/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HN/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HN/HN.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HN/src/main/java/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HN/src/main/java/bd/edu/seu/demo/main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HN/src/main/java/bd/edu/seu/demo/model/student_info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HN/src/main/java/hibernate.cfg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hibaernate/src/main/java/db/edu/seu/model/Supplier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hibaernate/src/main/java/db/edu/seu/model/priceHistory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hibaernate/src/main/java/db/edu/seu/repository/GenericMysqlImplementation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hibaernate/src/main/java/db/edu/seu/repository/GenericsDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AJLab1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/AJLab1.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/bd/edu/seu/ajlab1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bd/edu/seu/ajlab1/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bd/edu/seu/ajlab1/repository/DB/ProductDaoDBImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bd/edu/seu/ajlab1/repository/DB/ProductDaoDBImplementation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bd/edu/seu/ajlab1/repository/ProductDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bd/edu/seu/ajlab1/repository/ProductDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/bd/edu/seu/ajlab1/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bd/edu/seu/ajlab1/service/ProductService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/bd/edu/seu/ajlab1/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bd/edu/seu/ajlab1/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bd/edu/seu/ajlab1/repository/DB/ProductDaoDBImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bd/edu/seu/ajlab1/repository/DB/ProductDaoDBImplementation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bd/edu/seu/ajlab1/repository/ProductDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bd/edu/seu/ajlab1/repository/ProductDao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/bd/edu/seu/ajlab1/service/ProductService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bd/edu/seu/ajlab1/service/ProductService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hibaernate/src/main/java/db/edu/seu/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Hibaernate/src/main/java/db/edu/seu/main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hibaernate/src/main/java/db/edu/seu/model/product.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Hibaernate/src/main/java/db/edu/seu/model/product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hibaernate/src/main/java/db/edu/seu/repository/MysqlImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Hibaernate/src/main/java/db/edu/seu/repository/MysqlImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hibaernate/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Hibaernate/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hibaernate/target/classes/db/edu/seu/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hibaernate/target/classes/db/edu/seu/main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hibaernate/target/classes/db/edu/seu/model/product.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hibaernate/target/classes/db/edu/seu/model/product.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hibaernate/target/classes/db/edu/seu/repository/MysqlImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hibaernate/target/classes/db/edu/seu/repository/MysqlImplementation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hibaernate/target/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Hibaernate/target/classes/hibernate.cfg.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +73,20 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ProductDaoDBImplementationTest.updateProduct">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bd.edu.seu.ajlab1.Main" />
+      <module name="AJLab1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bd.edu.seu.ajlab1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ProductDaoDBImplementationTest.createProduct" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AJLab1" />
       <extension name="coverage">
@@ -167,7 +151,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProductDaoDBImplementationTest.updateProduct" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ProductDaoDBImplementationTest.updateProduct" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="AJLab1" />
       <extension name="coverage">
         <pattern>
@@ -185,7 +169,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ProductDaoDBImplementationTest.updateProduct" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.ProductDaoDBImplementationTest.readProduct" />
         <item itemvalue="JUnit.ProductDaoDBImplementationTest.deleteProduct" />
         <item itemvalue="JUnit.ProductDaoDBImplementationTest.createProduct" />
@@ -214,6 +198,8 @@
       <workItem from="1582768672077" duration="2204000" />
       <workItem from="1582781363673" duration="10000" />
       <workItem from="1583111775996" duration="2121000" />
+      <workItem from="1583718057622" duration="839000" />
+      <workItem from="1583722506703" duration="2443000" />
     </task>
     <servers />
   </component>
@@ -225,22 +211,22 @@
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="446" y="56" key="#com.intellij.ide.util.MemberChooser/0.0.1280.689@0.0.1280.689" timestamp="1582768776098" />
-    <state width="1237" height="441" key="GridCell.Tab.0.bottom" timestamp="1582778683251">
+    <state width="1237" height="441" key="GridCell.Tab.0.bottom" timestamp="1583729824294">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state width="1237" height="441" key="GridCell.Tab.0.bottom/0.0.1280.689@0.0.1280.689" timestamp="1582778683251" />
-    <state width="1237" height="441" key="GridCell.Tab.0.center" timestamp="1582778683251">
+    <state width="1237" height="441" key="GridCell.Tab.0.bottom/0.0.1280.689@0.0.1280.689" timestamp="1583729824294" />
+    <state width="1237" height="441" key="GridCell.Tab.0.center" timestamp="1583729824294">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state width="1237" height="441" key="GridCell.Tab.0.center/0.0.1280.689@0.0.1280.689" timestamp="1582778683251" />
-    <state width="1237" height="441" key="GridCell.Tab.0.left" timestamp="1582778683250">
+    <state width="1237" height="441" key="GridCell.Tab.0.center/0.0.1280.689@0.0.1280.689" timestamp="1583729824294" />
+    <state width="1237" height="441" key="GridCell.Tab.0.left" timestamp="1583729824294">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state width="1237" height="441" key="GridCell.Tab.0.left/0.0.1280.689@0.0.1280.689" timestamp="1582778683250" />
-    <state width="1237" height="441" key="GridCell.Tab.0.right" timestamp="1582778683251">
+    <state width="1237" height="441" key="GridCell.Tab.0.left/0.0.1280.689@0.0.1280.689" timestamp="1583729824294" />
+    <state width="1237" height="441" key="GridCell.Tab.0.right" timestamp="1583729824294">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state width="1237" height="441" key="GridCell.Tab.0.right/0.0.1280.689@0.0.1280.689" timestamp="1582778683251" />
+    <state width="1237" height="441" key="GridCell.Tab.0.right/0.0.1280.689@0.0.1280.689" timestamp="1583729824294" />
     <state x="337" y="171" key="com.intellij.ide.util.TipDialog" timestamp="1582768673751">
       <screen x="0" y="0" width="1280" height="689" />
     </state>

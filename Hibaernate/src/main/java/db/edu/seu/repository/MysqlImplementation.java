@@ -4,7 +4,7 @@ import db.edu.seu.model.product;
 import db.edu.seu.util.HibernanateUitl;
 import org.hibernate.Session;
 
-public class MysqlImplementation implements ProductDAO {
+public class MysqlImplementation  {
     HibernanateUitl hibernanateUitl  = new HibernanateUitl();
     Session session = hibernanateUitl.getSession().openSession();
     public product saveProduct(product p) {

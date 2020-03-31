@@ -73,6 +73,12 @@ public class ProductService {
                 .mapToDouble(p-> p.getUnitsInStock() * p.getUnitPrice()).sum();
     }
 
+    public void averageUnitPrice()
+    {
+        productDao.readAll().stream().mapToDouble(p->p.getUnitPrice()).min().ifPresent(p-> System.out.println(p));
+
+    }
+
     public void createProduct()
     {
         Product product = new Product(3,"apple","25-pice",30,20,27,10,true);
